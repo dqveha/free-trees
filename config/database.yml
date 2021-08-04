@@ -12,4 +12,4 @@ development:
 
 test:
   <<: *default
-  database: rails_record_store_myapp_test
+  database: rails_record_store_test

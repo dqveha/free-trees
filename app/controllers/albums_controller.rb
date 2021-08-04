@@ -13,9 +13,9 @@ class AlbumsController < ApplicationController
   end
 
   def create
-    # Code for creating a new album goes here.
     @album = Album.new(album_params)
     if @album.save
+      flash[:notice] = "Album successfully added!"
       redirect_to albums_path
     else
       render :new
